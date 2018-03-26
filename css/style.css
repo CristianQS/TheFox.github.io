@@ -10,7 +10,17 @@ body {
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+ul li{
+    display: inline-block;
+}
 
+header {
+    background-color: blue;
+}
+
+footer {
+    background-color: darkblue;
+}
 
 /* Grid*/
 
@@ -20,4 +30,111 @@ body {
     [full-start]minmax(1em,1fr)
     [main-start]minmax(0,40em)[main-center]minmax(0,40em)[main-end]
     minmax(1em,1fr)[full-end];
+    grid-gap: 10px;
 }
+
+.grid__full {
+    grid-column: full-start/full-end; 
+}
+
+.grid__main--full {
+    grid-column:main-start/main-end ;
+}
+
+.grid__main--left {
+    grid-column: main-start/main-center;
+}
+
+.grid__main--right {
+    grid-column: main-center/main-end;
+}
+
+.section1 {
+    background-color:greenyellow ;
+}
+.section2 {
+    background-color:red ;
+    
+}
+.section2__right {
+    background-color: olivedrab;
+    
+}
+
+.section3 {
+    background-color: purple;
+    
+}
+.section4 {
+    background-color: orange;
+}
+
+.section4__right {
+    background-color: orange;
+}
+.section5 {
+    background-color: cyan;
+}
+.section6__information {
+    background-color:sandybrown ;
+}
+.section6 {
+    background-color:sandybrown ;
+}
+.section7 {
+    background-color:darkcyan ;
+}
+
+.section8 {
+    background-color: saddlebrown;
+}
+
+.section8__image {
+    background-color: orchid;
+}
+
+.bar__stadicts{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;     
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bar__stadicts li:hover {
+    background-color: #2c3e50;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bar__stadicts li {
+    width: 384px;
+    height: 200px;
+    background-color: #1ad5b0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.bar__stadicts--text {
+    width: 154px;
+    height: 46px;
+    text-align: center;
+}
+
+.bar__stadicts li p {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.bar2 {
+    background-color:cornflowerblue ;
+}
+
+.empresas {
+    background-color: orchid;
+}
+
+
+
