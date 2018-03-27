@@ -219,13 +219,38 @@ footer {
 .opinion__card--rigth {
     padding: 10px 0 0 20px;
 }
+
+
+.companies{
+    border-top: 1px #e4e7e9 solid;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width:55.19%; 
+}
+.container img{
+    filter: grayscale(100%);
+    max-width: 100%; 
+    padding:2.52%;
+    margin: auto;
+}
+
+.container img:hover{
+    filter: grayscale(0%);
+}
+
+/* Google map */
+#map {
+    height: 400px;
+    background-color: grey;
+  }
+
 .bar2 {
     background-color:cornflowerblue ;
 }
 
-.empresas {
-    background-color: orchid;
-}
 
 
 

@@ -135,16 +135,21 @@
                     </div>
                 </div>
         </section>
-        <div class="grid__main--full">
-            <img src="/images/companies/telenor.jpg" alt="" srcset="">
-            <img src="/images/companies/nice.jpg" alt="" srcset="">
-            <img src="/images/companies/Plate.jpg" alt="" srcset="">
-            <img src="/images/companies/Brilliant.jpg" alt="" srcset="">
-            <img src="/images/companies/microsoft.jpg" alt="" srcset="">
-            <img src="/images/companies/ColorMedia.jpg" alt="" srcset="">
+        
+        <div class="companies grid__full">
+            <div class="container">
+                <img src="/images/companies/telenor.svg" alt="" srcset="">
+                <img src="/images/companies/nice.jpg" alt="" srcset="">
+                <img src="/images/companies/Plate.jpg" alt="" srcset="">
+                <img src="/images/companies/Brilliant.jpg" alt="" srcset="">
+                <img src="/images/companies/microsoft.jpg" alt="" srcset="">
+                <img src="/images/companies/ColorMedia.jpg" alt="" srcset="">
+
+            </div>
         </div>
-        <section class="section5 grid__full">maps</section>
-        <section class="section6__information grid__main--left">form</section>
+        <div id="map" class="grid__full"></div>
+
+        <section class="section5 on grid__main--left">form</section>
         <section class="section6 grid__main--right">form</section>
         <div class="bar2 grid__main--full">
             <ul>
@@ -159,6 +164,23 @@
         <section class="section7 grid__full">image</section>
     </main>
     <footer>footer</footer>
+    <script>
+            function initMap() {
+              var uluru = {lat: -25.363, lng: 131.044};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDdPK8FmrIh8Ljd4it1qjJVjLvxohiofJ0&callback=initMap">
+          </script>
+      
 </body>
 
 </html>
