@@ -97,9 +97,6 @@ footer {
     background-color: purple;
     
 }
-.section4 {
-    background-color: orange;
-}
 
 .section4__right {
     background-color: orange;
@@ -123,6 +120,7 @@ footer {
     font-weight: 300;     
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .bar__stadicts li:hover {
@@ -132,7 +130,8 @@ footer {
 
 .bar__stadicts li {
     color: #ffffff;
-    width: 381px;
+    width: 20%; 
+    /* responsive width:  100% */
     height: 200px;
     background-color: #1ad5b0;
     display: flex;
@@ -162,8 +161,37 @@ footer {
     border-radius: 2px;
     background-color: #a1b1bc;
     box-shadow: 1px 3px 0px 0px #81919b;
-    /* font-size: 16px; */
+    font-size: 16px;
     font-weight: 900;
+    margin-top: 4px;
+}
+
+.button__group {
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.button__group a{
+    padding: 10px 20px;
+    border:  1px #d7dfe1 solid;
+}
+
+.button__group img{
+    padding:0 10px;
+}
+
+.button__group  .button__group--right {
+    background-color: #ffffff;
+}
+
+.button__group .button__group--left {
+    background-color: #fbfafa;
+    border-right: none;   
+}
+
+.opinions__header {
+    padding-top: 100px;
+    text-align: center;
 }
 
 .bar2 {
