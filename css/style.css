@@ -33,6 +33,7 @@ h2 {
     padding-bottom: 10px;
 }
 
+
 p {
     color: #a1b1bc;
     font-size: 14px;
@@ -98,9 +99,6 @@ footer {
     
 }
 
-.section4__right {
-    background-color: orange;
-}
 .section5 {
     background-color: cyan;
 }
@@ -151,6 +149,7 @@ footer {
     font-weight: 900;
 }
 
+/* mobile */
 .sectionWithUs p{
     padding-bottom: 33.67px;
 }
@@ -165,6 +164,8 @@ footer {
     font-weight: 900;
     margin-top: 4px;
 }
+
+/* Section opinions */
 
 .button__group {
     margin: 20px;
@@ -194,6 +195,30 @@ footer {
     text-align: center;
 }
 
+.opinion__card {
+    background-color: rgba(236, 240, 241, 0.3);
+    border:1px #e4e7e9 solid;
+    border-radius: 3px;
+    padding: 30px 40px;
+    display: flex;
+    margin:30px 10px;
+    
+}
+
+.opinion__card__title {
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: 700;
+}
+.opinion__card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.opinion__card--rigth {
+    padding: 10px 0 0 20px;
+}
 .bar2 {
     background-color:cornflowerblue ;
 }
