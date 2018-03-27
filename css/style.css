@@ -9,7 +9,36 @@ body {
     padding: 0;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span,div,section,header,nav,a {
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #a1b1bc;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 ul li{
     display: inline-block;
 }
@@ -50,7 +79,10 @@ footer {
 }
 
 .section1 {
-    background-color:greenyellow ;
+    background: url('../images/bg123.jpg') ;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .section2 {
     background-color:red ;
@@ -85,18 +117,8 @@ footer {
     background-color:darkcyan ;
 }
 
-.section8 {
-    background-color: saddlebrown;
-}
-
-.section8__image {
-    background-color: orchid;
-}
-
+/* Barra middle */
 .bar__stadicts{
-    color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    color: #ffffff;
     font-size: 30px;
     font-weight: 300;     
     display: flex;
@@ -109,7 +131,8 @@ footer {
 }
 
 .bar__stadicts li {
-    width: 384px;
+    color: #ffffff;
+    width: 381px;
     height: 200px;
     background-color: #1ad5b0;
     display: flex;
@@ -124,7 +147,22 @@ footer {
 }
 
 .bar__stadicts li p {
+    color: #ffffff;
     font-size: 14px;
+    font-weight: 900;
+}
+
+.sectionWithUs p{
+    padding-bottom: 33.67px;
+}
+
+.button {
+    color: white;
+    padding: 18.67px 23.33px;
+    border-radius: 2px;
+    background-color: #a1b1bc;
+    box-shadow: 1px 3px 0px 0px #81919b;
+    /* font-size: 16px; */
     font-weight: 900;
 }
 
