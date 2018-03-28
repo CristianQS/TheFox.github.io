@@ -37,9 +37,21 @@ h2 {
     padding-bottom: 10px;
 }
 
+h3 {
+    color: #2c3e50;
+    font-size: 15px;
+    font-weight: 700;
+}
+
 h4 {
     font-size: 16px;
     font-weight: 400;
+}
+
+h5 {
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: 700;
 }
 
 p {
@@ -57,8 +69,7 @@ header {
 }
 
 footer {
-    
-    background-color: darkblue;
+    background-color:  #1a1c27;
 }
 
 /* Grid*/
@@ -87,25 +98,42 @@ footer {
 .grid__main--right {
     grid-column: main-center/main-end;
 }
-
+/* Header Image */
 .section1 {
     background: url('../images/bg123.jpg') ;
-    width: 100%;
     background-repeat: no-repeat;
-    padding-bottom: 31.2%;
+    background-position: center center;
+    background-size: cover;
+    background-color: #464646;
+    height: 899px;
 }
 
-.section2 {
-    background-color:red ;
-}
-.section2__right {
-    background-color: olivedrab;
+/* span */
+.information__span {
+    border: 1px solid #eceef0;
+    border-radius: 3px;
+    margin: 10px 0;
 }
 
+.information__span h3 {
+    padding: 10px;
+}
+
+.information__span p {
+    display:none; 
+}
+
+/* Amazing works */
 .section3 {
-    background-color: purple; 
+    text-align: center;
 }
 
+.card-works {
+}
+
+.card-works__title {
+    display: flex;
+}
 /* Barra middle */
 .bar__stadicts{
     font-size: 30px;
@@ -146,7 +174,9 @@ footer {
 .sectionWithUs p{
     padding-bottom: 33.67px;
 }
-
+ img{
+    max-width: 100%;
+}
 .button {
     color: white;
     padding: 18.67px 23.33px;
@@ -223,7 +253,7 @@ footer {
 }
 .container img{
     filter: grayscale(100%);
-    max-width: 100%; 
+    width: 120px;
     padding:2.52%;
 }
 
@@ -268,41 +298,128 @@ textarea{
 }
 /* bar blogs */
 .bar__blogs {
+    color: #ffffff;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
-.bar__blogs img{
-    max-width: 100%;
+.blog1:hover,.blog2:hover,.blog3:hover,.blog4:hover,.blog5:hover {
+    opacity: 1;
 }
+
+.blog__information {
+    padding: 10px;
+}
+.blog1:hover .blog__information,
+.blog2:hover .blog__information,
+.blog3:hover .blog__information,
+.blog4:hover .blog__information,
+.blog5:hover .blog__information 
+{
+    color: #29d9c2;
+    background-color: rgba(34, 37, 51, 0.96);
+}
+
+.blog1 {
+    background-image: url('../images/BarFooter/1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 20%;
+    height: 280px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 0.7;
+}
+.blog2 {
+    background-image: url('../images/BarFooter/2.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 20%;
+    height: 280px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 0.7;
+}
+.blog3 {
+    background-image: url('../images/BarFooter/3.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 20%;
+    height: 280px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 0.7;
+}
+.blog4 {
+    background-image: url('../images/BarFooter/4.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 20%;
+    height: 280px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 0.7;
+}
+.blog5 {
+    background-image: url('../images/BarFooter/5.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 20%;
+    height: 280px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 0.7;
+}
+
+
 
 /* imagefooter */
 .sectionFooter {
     background-image: url('../images/footer.jpg') ;
     background-repeat: no-repeat;
-    /* height: 0; */
-    padding-bottom: 11.9%; /**500/4152.72*/
+    background-size: cover;
+    background-position: center center;
     max-width: 100%;
+    height: 500px;
 }
 
 .wrapper {
     color: white; 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 7.78%;
+    text-align: center;
+    flex-direction: column;
 }
 .wrapper h2 {
     color: white; 
 }
 
+.wrapper div {
+    padding: 20px 0;
+}
+
 .button__noBackground {
     border: 2px #ffffff solid;
     border-radius: 5px;
-    margin-top: 20px;
-    padding: 10px;
     font-size: 16px;
     font-weight: 900;
+    padding: 10px;
 }
 
 
