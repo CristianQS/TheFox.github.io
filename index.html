@@ -29,9 +29,10 @@
             </ul>
         </nav>
     </header>
+
     <main class="grid">
         <section class="section1 grid__full">
-            a
+            <h1 class="title">BUILD AWESOME WORK</h1>
         </section>
         <section class="section2 grid__main--left">First information</section>
         <section class="section2__right  grid__main--right">Second information</section>
@@ -126,16 +127,16 @@
             </div>
 
             <div class="opinion__card">
-                    <img src="/images/persons/person32.jpg" alt="">
-                    <div class="opinion__card--rigth">
-                        <p class="opinion__card__title">Tran Mau Tri Tam</p>
-                        <p>Web Designer</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur odio numquam, magni aut omnis libero
-                            esse ipsum sit ratione, qui facere ipsam assumenda animi. Eum voluptatem quaerat ipsum nobis sit!</p>
-                    </div>
+                <img src="/images/persons/person32.jpg" alt="">
+                <div class="opinion__card--rigth">
+                    <p class="opinion__card__title">Tran Mau Tri Tam</p>
+                    <p>Web Designer</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur odio numquam, magni aut omnis libero
+                        esse ipsum sit ratione, qui facere ipsam assumenda animi. Eum voluptatem quaerat ipsum nobis sit!</p>
                 </div>
+            </div>
         </section>
-        
+
         <div class="companies grid__full">
             <div class="container">
                 <img src="/images/companies/telenor.svg" alt="" srcset="">
@@ -144,43 +145,89 @@
                 <img src="/images/companies/Brilliant.jpg" alt="" srcset="">
                 <img src="/images/companies/microsoft.jpg" alt="" srcset="">
                 <img src="/images/companies/ColorMedia.jpg" alt="" srcset="">
-
             </div>
         </div>
         <div id="map" class="grid__full"></div>
-
-        <section class="section5 on grid__main--left">form</section>
-        <section class="section6 grid__main--right">form</section>
-        <div class="bar2 grid__main--full">
-            <ul>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a
-                    <ali>
+        <section class="grid__main--left">
+            <h2>TheFox Design</h2>
+            <div class="icons">
+                <img src="/images/icons/facebook.jpg" alt="facebook icon">
+                <img src="/images/icons/twitter.jpg" alt="twitter icon">
+                <img src="/images/icons/rss.jpg" alt="">
+                <img src="/images/icons/google_plus.jpg" alt="google plus icon">
+                <img src="/images/icons/flickr.jpg" alt="flick">
+                <img src="/images/icons/dribbble.jpg" alt="">
+                <img src="/images/icons/linkedin.jpg" alt="">
+                <img src="/images/icons/pinterest.jpg" alt="">
+                <img src="/images/icons/skype.jpg" alt="">
+                <img src="/images/icons/vimeo.jpg" alt="">
+                <img src="/images/icons/tumblr.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at, omnis fugiat deleniti mollitia voluptas laudantium
+                nam autem facilis doloribus architecto ut porro aspernatur inventore, officia, eos sit molestiae quo.</p>
+            <div class="data">
+                <p>267 Banbury Road,Summertown</p>
+                <p>Oxford, United Kingdom OX2 7HT</p>
+                <p>United Kingdom</p>
+                <p>Phone:01865 339665</p>
+                <p>Fax:01865 339301</p>
+                <p>Email:hello@thefoxdesign.com</p>
+            </div>
+        </section>
+        <section class="grid__main--right">
+            <form action="">
+                <input type="text" name="name" id="">
+                <input type="email" name="email" id="">
+                <input type="text" name="phoneNumber" id="">
+                <textarea name="" id=""></textarea>
+                <input class="button" type="submit" value="SUBMIT NOW">
+            </form>
+        </section>
+        <div class="bar2 grid__full">
+            <ul class="bar__blogs">
+                <li>
+                    <img src="./images/BarFooter/1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./images/BarFooter/2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./images/BarFooter/3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./images/BarFooter/4.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./images/BarFooter/5.jpg" alt="">
+                </li>
             </ul>
         </div>
-        <section class="section7 grid__full">image</section>
+
     </main>
+    <section class="sectionFooter">
+        <div class="wrapper">
+            <h2>Get Stronger For Your Work</h2>
+            <h4>TheFox is One Of The Top Themeforest's Selling PSD Theme of All Time</h4>
+            <a class="button__noBackground">PURCHASE NOW</a>
+        </div>
+    </section>
     <footer>footer</footer>
     <script>
-            function initMap() {
-              var uluru = {lat: -25.363, lng: 131.044};
-              var map = new google.maps.Map(document.getElementById('map'), {
+        function initMap() {
+            var uluru = { lat: -25.363, lng: 131.044 };
+            var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 4,
                 center: uluru
-              });
-              var marker = new google.maps.Marker({
+            });
+            var marker = new google.maps.Marker({
                 position: uluru,
                 map: map
-              });
-            }
-          </script>
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDdPK8FmrIh8Ljd4it1qjJVjLvxohiofJ0&callback=initMap">
-          </script>
-      
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDdPK8FmrIh8Ljd4it1qjJVjLvxohiofJ0&callback=initMap">
+    </script>
+
 </body>
 
 </html>
