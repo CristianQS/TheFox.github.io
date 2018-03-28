@@ -278,7 +278,6 @@ textarea{
 
 /* imagefooter */
 .sectionFooter {
-    color: white; 
     background-image: url('../images/footer.jpg') ;
     background-repeat: no-repeat;
     /* height: 0; */
@@ -287,10 +286,14 @@ textarea{
 }
 
 .wrapper {
+    color: white; 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 7.78%;
+}
+.wrapper h2 {
+    color: white; 
 }
 
 .button__noBackground {
