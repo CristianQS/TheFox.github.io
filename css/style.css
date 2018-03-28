@@ -129,10 +129,25 @@ footer {
 }
 
 .card-works {
+    width: 33%;
 }
 
 .card-works__title {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #eceef0;
+}
+
+.card-works__title__favs {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper--works {
+    display: flex;
+    flex-wrap: wrap;
 }
 /* Barra middle */
 .bar__stadicts{
