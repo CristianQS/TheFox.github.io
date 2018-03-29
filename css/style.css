@@ -21,48 +21,55 @@ p,
 li,
 span,div,section,header,nav,a {
     font-family: 'Lato', sans-serif;
-    line-height: 24px;
+    line-height: 1.846rem;
     text-decoration: none;
 }
 
 h1 {
-    font-size: 45px;
+    font-size:3.46rem;
     color: #1a1c27;
+    line-height: 3rem;
     padding-bottom: 10px;
 }
 
 h2 {
     color: #2c3e50;
-    font-size: 36px;
+    font-size: 2.76rem;
     font-weight: 300;
     padding-bottom: 10px;
 }
 
 h3 {
     color: #2c3e50;
-    font-size: 15px;
+    font-size: 1.15rem;
     font-weight: 700;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 1.23rem;
     font-weight: 400;
 }
 
 h5 {
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    font-size: 18px;
+    font-size: 1.38rem;
     font-weight: 700;
 }
 
 p {
     color: #a1b1bc;
-    font-size: 14px;
+    font-size: 1.076rem;
     font-weight: 400;
 }
 
 ul li{
     display: inline-block;
+}
+
+nav {
+    /* position: fixed;
+    top: 0;
+    background-color: #fff; */
 }
 
 footer {
@@ -107,31 +114,42 @@ footer {
 }
 
 /***/
-.wrapper--nav {
-    width: 1170px;
-    margin: 0 auto;
+
+.wrapper {
     display: flex;
+    align-content: center;
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: 10px;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper--end {
+    justify-content: flex-end;
 }
 
 .navbar {
     font-size: 14px;
-    /* font-weight: 400; */
-    /*  */
+    margin:0 10px;
 }
 .navbar li {
-    padding: 20px 10px;
+    padding: 31.5px 10px;
 }
 .navbar li:hover {
     border-top: 5px #1abc9c solid;
     color: #1abc9c;
 }
 
+    .nav__icons {
+        float: right;
+        z-index: 5000;
+    }
+
+.nav__logo img{
+    padding: 5px;
+}
+
 /* Header Image */
-.section1 {
+.header__image {
     background: url('../images/bg123.jpg') ;
     background-repeat: no-repeat;
     background-position: center center;
@@ -140,7 +158,7 @@ footer {
     height: 899px;
 }
 
-.section1__ad {
+.header__image__ad {
     padding-top: 200px;
 }
 
@@ -497,14 +515,14 @@ textarea{
     height: 500px;
 }
 
-.wrapper {
+/* .wrapper {
     color: white; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-}
+} */
 .wrapper h2 {
     color: white; 
 }

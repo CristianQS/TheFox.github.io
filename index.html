@@ -3,41 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>theFox</title>
 </head>
 
 <body>
     <header>
-        <nav class="wrapper--nav">
-            <div class="logo">
-                <img src="/images/logo.png" alt="" srcset="">
-                <img src="/images/thefox.png" alt="" srcset="">
-            </div>
-            <ul class="navbar">
-                <li>HOME</li>
-                <li>PAGE</li>
-                <li>PORTFOLIO</li>
-                <li>BLOG</li>
-                <li>SHOP</li>
-                <li>TRAVEL</li>
-                <li>SHORTCODES</li>
-                <li>FEATURES</li>
-                <li>CONTACT</li>
-            </ul>
-            <div class="icons--nav">
-                <img src="/images/icons/search.png" alt="" srcset="">
-                <img src="/images/icons/cart.png" alt="" srcset="">
+        <nav class="grid">
+            <div class="grid__main--full ">
+                <div class="wrapper">
+                    <div class="nav__logo">
+                        <img src="/images/logo.png" alt="" srcset="">
+                        <img src="/images/thefox.png" alt="nombre de la empresa: the Fox">
+                    </div>
+                    <div class="wrapper">
+                        <a href="#" class="bt-menu" onclick="dropdown()">&#9776;</a>
+                        <ul class="navbar collapse">
+                            <li>
+                                <a>HOME</a>
+                            </li>
+                            <li>
+                                <a>PAGE</a>
+                            </li>
+                            <li>
+                                <a>PORTFOLIO</a>
+                            </li>
+                            <li>
+                                <a>BLOG</a>
+                            </li>
+                            <li>
+                                <a>SHOP</a>
+                            </li>
+                            <li>
+                                <a>TRAVE</a>L</li>
+                            <li>
+                                <a>SHORTCODES</a>
+                            </li>
+                            <li>
+                                <a>FEATURES</a>
+                            </li>
+                            <li>
+                                <a>CONTACT</a>
+                            </li>
+                        </ul>
+
+                        <div class="nav__icons">
+                            <img src="/images/icons/search.png" alt="" srcset="">
+                            <img src="/images/icons/cart.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </nav>
     </header>
-    <section class="section1 grid">
-        <div class="section1__ad grid__main--left">
+    <section class="header__image grid">
+        <div class="header__image__ad grid__main--left">
             <p class="title">
                 WE ARE ALWAYS WORKING HARD TO
             </p>
@@ -421,12 +448,24 @@
                 <div class="footer__column">
                     <h3>FEATURED WORKS</h3>
                     <div class="grid__footer__images">
-                        <a><img src="/images/Amazing works/cajas.jpg" alt=""></a>
-                        <a><img src="/images/Amazing works/coffe.jpg" alt=""></a>
-                        <a><img src="/images/Amazing works/coffes.jpg" alt=""></a>
-                        <a><img src="/images/Amazing works/libretas.jpg" alt=""></a>
-                        <a><img src="/images/Amazing works/mockup.jpg" alt=""></a>
-                        <a><img src="/images/Amazing works/shark.jpg" alt=""></a>
+                        <a>
+                            <img src="/images/Amazing works/cajas.jpg" alt="">
+                        </a>
+                        <a>
+                            <img src="/images/Amazing works/coffe.jpg" alt="">
+                        </a>
+                        <a>
+                            <img src="/images/Amazing works/coffes.jpg" alt="">
+                        </a>
+                        <a>
+                            <img src="/images/Amazing works/libretas.jpg" alt="">
+                        </a>
+                        <a>
+                            <img src="/images/Amazing works/mockup.jpg" alt="">
+                        </a>
+                        <a>
+                            <img src="/images/Amazing works/shark.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -445,8 +484,11 @@
             });
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDdPK8FmrIh8Ljd4it1qjJVjLvxohiofJ0&callback=initMap">
     </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWlE2anBO-qFQ-GkvfVFH3RgHGbDIdXsI&callback=initMap"
+        type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
