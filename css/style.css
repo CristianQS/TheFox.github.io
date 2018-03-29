@@ -26,8 +26,9 @@ span,div,section,header,nav,a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
     color: #1a1c27;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -106,6 +107,51 @@ footer {
     background-size: cover;
     background-color: #464646;
     height: 899px;
+}
+
+.section1__ad {
+    padding-top: 200px;
+}
+
+.flexca {
+    display: flex;
+    align-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.flexca p, .section1__sentece img {
+    padding: 10px;
+}
+.flexca p {
+    font-size: 22px;
+    color: #1a1c27;
+}
+
+.section1__sentece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexca .section1__sentece--important  {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+
+.button__header {
+    font-weight: 900;
+    color: #fff;
+    padding: 18px 20px;
+    background: #222533;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title {
+    padding: 20px 0;
+    font-size: 24.4px;
+    color: #1a1c27;
 }
 
 /* span */
