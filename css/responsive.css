@@ -114,7 +114,7 @@
         font-size: 1rem;
         padding-bottom: 0;
     }
-      
+
     .mainImage__information--wrapper p{
         padding: 0px 0px 4px 2px;
     }
@@ -130,6 +130,7 @@
     .mainImage{
         height:450px ;
     }
+    
 }
 
 @media screen and (max-width: 350PX) {
