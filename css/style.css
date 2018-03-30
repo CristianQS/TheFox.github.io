@@ -292,8 +292,7 @@ footer {
     max-width: 100%;
 }
 
-.card-works:hover img  {
-    background-color: #fff;
+.card-works__image:hover  {
     opacity: 0;
     transition: all .2s linear;
 }
@@ -309,6 +308,11 @@ footer {
 .card-works__title__favs {
     display: flex;
     align-items: center;
+}
+
+.card-works__text {
+    display: none;
+    text-align: center;
 }
 
 .wrapper__works {
