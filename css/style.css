@@ -66,11 +66,11 @@ ul li{
 }
 
 nav {
-    position: fixed;
-    background-color: #fff;
-    top:0;
     width: 100%;
+    background: #FFFFFF;
+    position: fixed;
     z-index: 2;
+    top: 0;
 }
 
 footer {
@@ -145,6 +145,12 @@ footer {
     border-top: 5px #1abc9c solid;
     color: #1abc9c;
 }
+.navbar div img {
+    padding:0 10px;
+}
+.navbar div  {
+    display: inline-block;
+}
 
 .nav__logo img{
     padding: 5px;
@@ -153,6 +159,10 @@ footer {
 /* Header Image */
 .mainImage {
     background: url('../images/bg123.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #464646;
     height: 899px;
 }
 
@@ -438,11 +448,6 @@ footer {
   }
 
 /* Form */
-
-.sectionEnterprise__icons {
-    display: flex;
-    align-items: center;
-}
 
 .sectionEnterprise__icons img {
     padding-right: 20px;
