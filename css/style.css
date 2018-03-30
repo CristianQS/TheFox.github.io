@@ -65,14 +65,6 @@ ul li{
     display: inline-block;
 }
 
-nav {
-    width: 100%;
-    background: #FFFFFF;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-}
-
 footer {
     background-color:  #1a1c27;
 }
