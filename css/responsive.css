@@ -30,7 +30,7 @@
         overflow: scroll;
         width: 100%;
         height: calc(100vh - 60px);
-        transform: translateX(-50%);
+        transform: translateX(25%);
         transition: all 1s;
     }
 }
