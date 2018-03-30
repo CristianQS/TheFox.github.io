@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <title>theFox</title>
+    <title>TheFox</title>
 </head>
 
 <body>
@@ -23,7 +23,9 @@
                         <img src="/images/thefox.png" alt="nombre de la empresa: the Fox">
                     </div>
                     <div class="wrapper">
-                        <a href="#" class="bt-menu" onclick="dropdown()">&#9776;</a>
+                        <a href="#" class="bt-menu" onclick="dropdownNav()">
+                            <img src="/images/icons/menu.jpg" alt="menu icon">
+                        </a>
                         <ul class="navbar collapse">
                             <li>
                                 <a>HOME</a>
@@ -55,7 +57,7 @@
 
                         <div>
                             <img src="/images/icons/search.png" alt="icono de una lupa">
-                            <img src="/images/icons/cart.png" alt="icono de carrito de compra" >
+                            <img src="/images/icons/cart.png" alt="icono de carrito de compra">
                         </div>
                     </div>
                 </div>
@@ -63,7 +65,7 @@
             </div>
         </nav>
     </header>
-    <section class="mainImage grid">
+    <section class="mainImage background__image--configuration grid">
         <div class="mainImage__information grid__main--left">
             <p class="title--complementary">
                 WE ARE ALWAYS WORKING HARD TO
@@ -89,130 +91,157 @@
         </div>
     </section>
     <main class="grid">
-        <section class="grid__main--left">
+        <section class="section--spacing grid__main--left">
             <h2>Hello!</h2>
             <p>Welcome to ThemeForest! Read our Getting Started Guide, visit the Blog for recent news and make yourself at home!
                 You can find information about ThemeForest in our Knowledgebase.</p>
             <h3>WordPress Drag & Drop Page Themes</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse omnis impedit iusto in eius nesciunt labore
-                similique iure. Voluptatum quod dolore sint adipisci illum debitis? Consequatur amet a error?</p>
+                similique iure. Voluptatum quod dolore sint adipisci illum debitis? Consequatur amet a error?Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Quod, numquam deserunt molestiae ullam tempore tempora maiores
+                expedita! Totam reprehenderit unde laboriosam minus porro repellendus similique tenetur, facilis quo voluptates
+                eaque?
+            </p>
             <a class="button" href="#">VIEW DETAIL</a>
         </section>
-        <section class="grid__main--right">
-            <div class="information__span">
-                <a href="#">
-                    <h3>WebDesign Service</h3>
+        <section class="section--spacing grid__main--right">
+            <div class="span--dropdown">
+                <a onclick="dropdown(WebDesign)">
+                    <div class="wrapper">
+                        <h3>WebDesign Service</h3>
+                        <div class="span__image">
+                            <img src="/images/icons/arrow_down.jpg" alt="flecha hacia abajo, desplega span">
+                        </div>
+                    </div>
                 </a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente doloremque similique porro itaque,
+                <p id="WebDesign">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente doloremque similique porro itaque,
                     culpa quidem at dolor minus repellat sit optio repellendus consequuntur quibusdam molestias? Ut nihil
                     sed dignissimos?</p>
             </div>
-            <div class="information__span">
-                <a href="#">
-                    <h3>Creative Service</h3>
+            <div class="span--dropdown">
+                <a onclick='dropdown(Creative)'>
+                    <div class="wrapper">
+                        <h3>Creative Service</h3>
+                        <div class="span__image">
+                            <img src="/images/icons/arrow_down.jpg" alt="flecha hacia abajo, desplega span">
+                        </div>
+                    </div>
+
                 </a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente doloremque similique porro itaque,
+                <div class="wrapper wrapper__image--dropdown">
+                    <img src="/images/lemon2-100x100.png" alt="limon amarillo cortado en dos, con colores del arcoiris en su interior">
+                    <p id="Creative">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente doloremque similique porro itaque, culpa quidem
+                        at dolor minus repellat sit optio repellendus consequuntur quibusdam molestias? Ut nihil sed dignissimos?
+                    </p>
+                </div>
+            </div>
+            <div class="span--dropdown">
+                <a onclick="dropdown(SEO)">
+                    <div class="wrapper">
+                        <h3>SEO Solutions Service</h3>
+                        <div class="span__image">
+                            <img src="/images/icons/arrow_down.jpg" alt="flecha hacia abajo, desplega span">
+                        </div>
+                    </div>
+                </a>
+                <p id="SEO">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente doloremque similique porro itaque,
                     culpa quidem at dolor minus repellat sit optio repellendus consequuntur quibusdam molestias? Ut nihil
                     sed dignissimos?</p>
             </div>
-            <div class="information__span">
-                <a href="#">
-                    <h3>SEO Solutions Service</h3>
+            <div class="span--dropdown">
+                <a onclick="dropdown(Graphic)">
+                    <div class="wrapper">
+                        <h3>Graphic Design Service</h3>
+                        <div class="span__image">
+                            <img src="/images/icons/arrow_down.jpg" alt="flecha hacia abajo, desplega span">
+                        </div>
+                    </div>
                 </a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente doloremque similique porro itaque,
-                    culpa quidem at dolor minus repellat sit optio repellendus consequuntur quibusdam molestias? Ut nihil
-                    sed dignissimos?</p>
-            </div>
-            <div class="information__span">
-                <a href="#">
-                    <h3>Graphic Design Service</h3>
-                </a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente doloremque similique porro itaque,
+                <p id="Graphic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente doloremque similique porro itaque,
                     culpa quidem at dolor minus repellat sit optio repellendus consequuntur quibusdam molestias? Ut nihil
                     sed dignissimos?</p>
             </div>
         </section>
-        <section class="section3 grid__main--full ">
+        <section class="section--spacing works grid__main--full ">
             <h2>Amazing Works</h2>
 
-            <div class="wrapper--works">
+            <div class="wrapper wrapper__works">
                 <div class="card-works">
                     <div class="card-works__title">
                         <h4>Awesome Work Title Here</h4>
                         <div class="card-works__title__favs">
                             <p>34</p>
-                            <img src="/images/like.png" alt="">
+                            <img src="/images/like.png" alt="corazon">
                         </div>
                     </div>
-                    <img src="/images/Amazing works/coffes.jpg" alt="">
+                    <img src="/images/Amazing works/coffes.jpg" alt="conjunto de cafes">
                 </div>
                 <div class="card-works">
                     <div class="card-works__title">
                         <h4>Awesome Work Title Here</h4>
                         <div class="card-works__title__favs">
                             <p>656</p>
-                            <img src="/images/like.png" alt="">
+                            <img src="/images/like.png" alt="corazon">
                         </div>
                     </div>
-                    <img src="/images/Amazing works/cajas.jpg" alt="">
+                    <img src="/images/Amazing works/cajas.jpg" alt="conjunto de cajas">
                 </div>
                 <div class="card-works">
                     <div class="card-works__title">
                         <h4>Awesome Work Title Here</h4>
                         <div class="card-works__title__favs">
                             <p>12</p>
-                            <img src="/images/like.png" alt="">
+                            <img src="/images/like.png" alt="corazon">
                         </div>
                     </div>
-                    <img src="/images/Amazing works/shark.jpg" alt="">
+                    <img src="/images/Amazing works/shark.jpg" alt="dibujo de un tiburón">
                 </div>
                 <div class="card-works">
                     <div class="card-works__title">
                         <h4>Awesome Work Title Here</h4>
                         <div class="card-works__title__favs">
                             <p>76</p>
-                            <img src="/images/like.png" alt="">
+                            <img src="/images/like.png" alt="corazon">
                         </div>
                     </div>
-                    <img src="/images/Amazing works/mockup.jpg" alt="">
+                    <img src="/images/Amazing works/mockup.jpg" alt="conjunto de cajas">
                 </div>
                 <div class="card-works">
                     <div class="card-works__title">
                         <h4>Awesome Work Title Here</h4>
                         <div class="card-works__title__favs">
                             <p>57</p>
-                            <img src="/images/like.png" alt="">
+                            <img src="/images/like.png" alt="corazon">
                         </div>
                     </div>
-                    <img src="/images/Amazing works/libretas.jpg" alt="">
+                    <img src="/images/Amazing works/libretas.jpg" alt="conjunto de libretas">
                 </div>
                 <div class="card-works">
                     <div class="card-works__title">
                         <h4>Awesome Work Title Here</h4>
                         <div class="card-works__title__favs">
                             <p>02</p>
-                            <img src="/images/like.png" alt="">
+                            <img src="/images/like.png" alt="corazon">
                         </div>
                     </div>
-                    <img src="/images/Amazing works/coffe.jpg" alt="">
+                    <img src="/images/Amazing works/coffe.jpg" alt="taza de cafe">
                 </div>
             </div>
 
-
-
         </section>
-        <section class="sectionWithUs grid__main--left">
+        <section class="section--spacing sectionWithUs grid__main--left">
             <h2>Why Work With Us</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam aut eos aliquam cumque ipsa, similique minima
                 rem impedit dolorum voluptatem placeat facere, exercitationem, autem nostrum at adipisci culpa tenetur reprehenderit!</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ad distinctio ratione repudiandae doloribus
                 porro similique, dignissimos debitis ea quam autem cum non. Optio non dolore vero dignissimos, voluptatum
-                perspiciatis. Maxime ipsum dolorem.</p>
+                perspiciatis. Maxime ipsum dolorem. lorem</p>
 
             <a class="button" href="#">VIEW DETAIL</a>
         </section>
-        <section class="sectionWithUs grid__main--right">
+        <section class=" section--spacing  sectionWithUs grid__main--right">
             <img src="/images/imageWorkWithUs.jpg" alt="Smarthphone with a woman as a background">
         </section>
         <div class="grid__full">
@@ -249,19 +278,19 @@
                 </li>
             </ul>
         </div>
-        <div class="grid__main--full opinions__header">
+        <div class="grid__main--full section--spacing opinions__header">
             <h2>What Other Say About TheFox</h2>
             <div class="button__group">
                 <a class="button__group--left">
-                    <img src="./images/arrow_left.svg" alt="" srcset=""> Previous</a>
+                    <img src="./images/arrow_left.svg" alt="flecha hacia la izquierda" > Previous</a>
                 <a class="button__group--right">Next
-                    <img src="./images/arrow_right.svg" alt="" srcset="">
+                    <img src="./images/arrow_right.svg" alt="flecha hacia la derecha">
                 </a>
             </div>
         </div>
         <section class="grid__main--left">
             <div class="opinion__card">
-                <img src="/images/persons/person1.jpg" alt="">
+                <img src="/images/persons/person1.jpg" alt="hombre calvo">
                 <div class="opinion__card--rigth">
                     <p class="opinion__card__title">San Isbister</p>
                     <p>Web Designer</p>
@@ -270,7 +299,7 @@
                 </div>
             </div>
             <div class="opinion__card">
-                <img src="/images/persons/person22.jpg" alt="">
+                <img src="/images/persons/person22.jpg" alt="joven con barba">
                 <div class="opinion__card--rigth">
                     <p class="opinion__card__title">Jane Doe</p>
                     <p>Web Designer</p>
@@ -281,7 +310,7 @@
         </section>
         <section class="grid__main--right">
             <div class="opinion__card">
-                <img src="/images/persons/guy-022.jpg" alt="">
+                <img src="/images/persons/guy-022.jpg" alt="joven con barba">
                 <div class="opinion__card--rigth">
                     <p class="opinion__card__title">John Doe</p>
                     <p>Web Designer</p>
@@ -291,7 +320,7 @@
             </div>
 
             <div class="opinion__card">
-                <img src="/images/persons/person32.jpg" alt="">
+                <img src="/images/persons/person32.jpg" alt="mujer con gafa">
                 <div class="opinion__card--rigth">
                     <p class="opinion__card__title">Tran Mau Tri Tam</p>
                     <p>Web Designer</p>
@@ -301,35 +330,39 @@
             </div>
         </section>
 
-        <div class="companies grid__full">
-            <div class="container">
-                <img src="/images/companies/telenor.jpg" alt="" srcset="">
-                <img src="/images/companies/nice.jpg" alt="" srcset="">
-                <img src="/images/companies/Plate.jpg" alt="" srcset="">
-                <img src="/images/companies/Brilliant.jpg" alt="" srcset="">
-                <img src="/images/companies/microsoft.jpg" alt="" srcset="">
-                <img src="/images/companies/ColorMedia.jpg" alt="" srcset="">
+        <div class="sectioncompanies grid__full">
+            <div class="sectioncompanies__container">
+                <img src="/images/companies/telenor.jpg" alt="icono de la empresa telenor" >
+                <img src="/images/companies/nice.jpg" alt="icono de la empresa nice">
+                <img src="/images/companies/Plate.jpg" alt="icono de la empresa plate" >
+                <img src="/images/companies/Brilliant.jpg" alt="icono de la empresa brilliant">
+                <img src="/images/companies/microsoft.jpg" alt="icono de la empresa microsoft" >
+                <img src="/images/companies/ColorMedia.jpg" alt="icono de la empresa colormedia">
             </div>
         </div>
-        <div id="map" class="grid__full"></div>
-        <section class="grid__main--left">
+
+        <div id="map" class="grid__full">
+            
+        </div>
+
+        <section class="section--spacing grid__main--left">
             <h2>TheFox Design</h2>
-            <div class="icons">
-                <img src="/images/icons/facebook.jpg" alt="facebook icon">
-                <img src="/images/icons/twitter.jpg" alt="twitter icon">
-                <img src="/images/icons/rss.jpg" alt="">
-                <img src="/images/icons/google_plus.jpg" alt="google plus icon">
-                <img src="/images/icons/flickr.jpg" alt="flick">
-                <img src="/images/icons/dribbble.jpg" alt="">
-                <img src="/images/icons/linkedin.jpg" alt="">
-                <img src="/images/icons/pinterest.jpg" alt="">
-                <img src="/images/icons/skype.jpg" alt="">
-                <img src="/images/icons/vimeo.jpg" alt="">
-                <img src="/images/icons/tumblr.jpg" alt="">
+            <div class="sectionEnterprise__icons">
+                <img src="/images/icons/facebook.png" alt="facebook icono">
+                <img src="/images/icons/twitter.png" alt="twitter icono">
+                <img src="/images/icons/rss.png" alt="rss icono">
+                <img src="/images/icons/google_plus.png" alt="google plus icono">
+                <img src="/images/icons/flickr.png" alt="flick icon">
+                <img src="/images/icons/dribbble.png" alt=" dribble icono">
+                <img src="/images/icons/linkedin.png" alt="linkedin icono">
+                <img src="/images/icons/pinterest.png" alt="pinterest icono">
+                <img src="/images/icons/skype.png" alt="skype icono">
+                <img src="/images/icons/vimeo.png" alt="vimeo icono">
+                <img src="/images/icons/tumblr.png" alt="tumblr icono">
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at, omnis fugiat deleniti mollitia voluptas laudantium
                 nam autem facilis doloribus architecto ut porro aspernatur inventore, officia, eos sit molestiae quo.</p>
-            <div class="data">
+            <div class="sectionEnterprise__data">
                 <p>267 Banbury Road,Summertown</p>
                 <p>Oxford, United Kingdom OX2 7HT</p>
                 <p>United Kingdom</p>
@@ -338,41 +371,41 @@
                 <p>Email:hello@thefoxdesign.com</p>
             </div>
         </section>
-        <section class="grid__main--right">
-            <form action="">
-                <input type="text" name="name" id="">
-                <input type="email" name="email" id="">
-                <input type="text" name="phoneNumber" id="">
-                <textarea name="" id=""></textarea>
+        <section class="section--spacing grid__main--right">
+            <form>
+                <input type="text" name="name" placeholder=" Name">
+                <input type="email" name="email" placeholder=" Email">
+                <input type="text" name="phoneNumber" placeholder=" Number">
+                <textarea name="" ></textarea>
                 <input class="button" type="submit" value="SUBMIT NOW">
             </form>
         </section>
         <div class="bar__blogs grid__full">
-            <div class="blog1">
+            <div class="blog1 background__image--configuration">
                 <div class="blog__information">
                     <h5>Standard Blog Title Here</h5>
                     <p>27 July,2014 | Category</p>
                 </div>
             </div>
-            <div class="blog2">
+            <div class="blog2 background__image--configuration">
                 <div class="blog__information">
                     <h5>Standard Blog Title Here</h5>
                     <p>27 July,2014 | Category</p>
                 </div>
             </div>
-            <div class="blog3">
+            <div class="blog3 background__image--configuration">
                 <div class="blog__information">
                     <h5>Standard Blog Title Here</h5>
                     <p>27 July,2014 | Category</p>
                 </div>
             </div>
-            <div class="blog4">
+            <div class="blog4 background__image--configuration">
                 <div class="blog__information">
                     <h5>Standard Blog Title Here</h5>
                     <p>27 July,2014 | Category</p>
                 </div>
             </div>
-            <div class="blog5">
+            <div class="blog5 background__image--configuration">
                 <div class="blog__information">
                     <h5>Standard Blog Title Here</h5>
                     <p>27 July,2014 | Category</p>
@@ -380,7 +413,7 @@
             </div>
         </div>
     </main>
-    <section class="sectionFooter wrapper wrapper__footer">
+    <section class="imageFooter background__image--configuration wrapper wrapper__footer">
         <div>
             <h2>Get Stronger For Your Work</h2>
             <h4>TheFox is One Of The Top Themeforest's Selling PSD Theme of All Time</h4>
@@ -395,7 +428,7 @@
         <div class="grid__main--full">
             <div class="footer__columns">
                 <div class="footer__column">
-                    <img src="/images/footer/Logo.png" alt="" srcset="">
+                    <img src="/images/footer/Logo.png" alt="logo de la web: TheFox">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo laudantium tempore ducimus iste porro
                         recusandae amet enim ut tempora nam eum natus, numquam tenetur rerum at mollitia laboriosam.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus asperiores vero possimus ex odio?</p>
@@ -425,7 +458,7 @@
                     <ul class="footer__column__tweets">
                         <li>
                             <div>
-                                <img src="/images/icons/twitter_footer.jpg" alt="" srcset="">
+                                <img src="/images/icons/twitter_footer.jpg" alt="twitter icono">
                             </div>
                             <div>
                                 <p>Just Updated my new site.@samisbister @wjndheo</p>
@@ -434,7 +467,7 @@
                         </li>
                         <li>
                             <div>
-                                <img src="/images/icons/twitter_footer.jpg" alt="" srcset="">
+                                <img src="/images/icons/twitter_footer.jpg" alt="twitter icono" >
                             </div>
                             <div>
                                 <p>Hey everybody! Adelfox Update WP version. 356 Core Features Addes. Check it now!
@@ -449,22 +482,22 @@
                     <h3>FEATURED WORKS</h3>
                     <div class="grid__footer__images">
                         <a>
-                            <img src="/images/Amazing works/cajas.jpg" alt="">
+                            <img src="/images/Amazing works/cajas.jpg" alt="conjunto de cajas">
                         </a>
                         <a>
-                            <img src="/images/Amazing works/coffe.jpg" alt="">
+                            <img src="/images/Amazing works/coffe.jpg" alt="vaso de cafe">
                         </a>
                         <a>
-                            <img src="/images/Amazing works/coffes.jpg" alt="">
+                            <img src="/images/Amazing works/coffes.jpg" alt="conjunto de cafes">
                         </a>
                         <a>
-                            <img src="/images/Amazing works/libretas.jpg" alt="">
+                            <img src="/images/Amazing works/libretas.jpg" alt="conjunto de libretas">
                         </a>
                         <a>
-                            <img src="/images/Amazing works/mockup.jpg" alt="">
+                            <img src="/images/Amazing works/mockup.jpg" alt="conjunto de cajas">
                         </a>
                         <a>
-                            <img src="/images/Amazing works/shark.jpg" alt="">
+                            <img src="/images/Amazing works/shark.jpg" alt="dibujo de un tiburon">
                         </a>
                     </div>
                 </div>

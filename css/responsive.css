@@ -69,7 +69,10 @@
     .footer__column {
         padding: 20px 0;
         width:100%
-        
+    }
+    .section--spacing {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -86,6 +89,9 @@
         padding-top: 10px;
         padding-bottom:  10px;
     }
+
+
+    
 }
 
 @media screen and (max-width: 432PX) {
