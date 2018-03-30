@@ -22,12 +22,11 @@
     }
     .active  {
         display: inline-block;
-        
     }
 }
 
 @media screen and (max-width: 1070px) {
-    .mainImage{
+    .mainImage {
         height:600px ;
     }
 }
@@ -36,6 +35,11 @@
     .mainImage__information--wrapper p {
         font-size: 1.2rem;
     }
+
+    .mainImage__information {
+        padding-top: 12.222%;
+    }
+    
 
     .button__header {
         padding: 9px 10px;
@@ -74,6 +78,7 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
+    
 }
 
 @media screen and (max-width: 500PX) {
@@ -89,9 +94,6 @@
         padding-top: 10px;
         padding-bottom:  10px;
     }
-
-
-    
 }
 
 @media screen and (max-width: 432PX) {
