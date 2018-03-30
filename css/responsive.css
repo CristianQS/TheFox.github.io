@@ -28,7 +28,7 @@
         position: absolute;
         top: 50px;
         overflow: scroll;
-        width: 70%;
+        width: 100%;
         height: calc(100vh - 60px);
         transform: translateX(-80%);
         transition: all 1s;
@@ -130,7 +130,7 @@
     .mainImage{
         height:450px ;
     }
-    
+
 }
 
 @media screen and (max-width: 350PX) {
