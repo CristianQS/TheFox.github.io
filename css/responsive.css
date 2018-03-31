@@ -30,8 +30,9 @@
         top: 50px;
         width: 200px;
         height: calc(100vh - 60px);
+        -ms-transform: translateX(-150px); /* IE 9 */
+        -webkit-transform: translateX(-150px); /* Safari */
         transform: translateX(-150px);
-        /* transition: all 1s; */
     }
 }
 
