@@ -83,7 +83,6 @@ footer {
     [full-start]minmax(1em,1fr)
     [main-start]  minmax(0,45em)[main-center]minmax(0,45em)[main-end]
     minmax(1em,1fr)[full-end];
-    /* grid-gap: 10px; */
 }
 
 .grid__full {

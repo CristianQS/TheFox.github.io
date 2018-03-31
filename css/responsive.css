@@ -17,8 +17,11 @@
         width: 100%;
         padding-right: 0;
         padding-left: 0;
-        border-top:none;
         text-align: center;
+    }
+
+    .navbar--collpse {
+        margin-top: 50px;
     }
 
     .active  {
@@ -27,11 +30,11 @@
         overflow: scroll;
         background: #FFFFFF;
         position: absolute;
-        top: 50px;
-        width: 200px;
+        top: inherit;
+        width: 175px;
         height: calc(100vh - 60px);
-        -ms-transform: translateX(-150px); /* IE 9 */
-        -webkit-transform: translateX(-150px); /* Safari */
+        -ms-transform: translateX(-150px); 
+        -webkit-transform: translateX(-150px); 
         transform: translateX(-150px);
     }
 }
@@ -47,10 +50,13 @@
         font-size: 1.2rem;
     }
 
+    .title--complementary{
+        padding-top: 50px;
+    }
     .mainImage__information {
         padding-top: 12.222%;
     }
-    
+
     .button__header {
         padding: 9px 10px;
         font-size: 1rem;
