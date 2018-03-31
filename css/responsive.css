@@ -23,6 +23,15 @@
 
     .active  {
         display: block;
+        margin: 0;
+        overflow: scroll;
+        background: #FFFFFF;
+        position: absolute;
+        top: 50px;
+        width: 200px;
+        height: calc(100vh - 60px);
+        transform: translateX(-150px);
+        transition: all 1s;
     }
 }
 
